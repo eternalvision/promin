@@ -1,0 +1,9 @@
+/* Webfont: Dirtyline36Daysoftype2022-Reg */
+@font-face {
+  font-family: "Dirtyline36Daysoftype2022";
+  src: url("Dirtyline.woff") format("woff"), url("Dirtyline.woff2") format("woff2"),
+    url("Dirtyline.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+  text-rendering: optimizeLegibility;
+}

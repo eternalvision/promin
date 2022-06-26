@@ -1,0 +1,44 @@
+.Header {
+  // box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  background-color: #00000037;
+}
+
+.NameAuthor {
+  display: flex;
+  padding: 20px 20px 15px 20px;
+  li {
+    &:first-child {
+      margin-right: 20px;
+      z-index: 1;
+      position: relative;
+      img {
+        transition: all 250ms ease;
+        animation: rotate 15s linear infinite;
+        @keyframes rotate {
+          from {
+            transform: rotate(360deg);
+          }
+        }
+      }
+    }
+    &:nth-child(2) {
+      position: absolute;
+      img {
+        border-radius: 50%;
+        margin: 16px 0px 0px 15px;
+      }
+    }
+    &:nth-child(3) {
+      font-family: "Dirtyline36Daysoftype2022";
+      margin-top: 10px;
+      font-size: 55px;
+      font-weight: 500;
+      color: #2b2a29;
+      span {
+        font-size: 35px;
+      }
+    }
+  }
+}

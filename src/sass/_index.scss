@@ -1,0 +1,33 @@
+@import "App";
+@import "Header";
+@import "Main";
+@import "Footer";
+@import "normalize";
+@import "fonts/Dirtyline.css";
+
+* {
+  box-sizing: border-box;
+  transition: 0.01s;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  background-image: linear-gradient(-20deg, #aaaaaa 0%, #778279 100%);
+}
