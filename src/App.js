@@ -1,15 +1,15 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import { HeaderComponents, FooterComponents, RouteComponents } from "./components";
+import { Components, RouteComponents } from "./components";
 
 function App() {
   return (
     <Router>
-      <HeaderComponents.Header />
       <Routes>
-        <Route path="/" element={<RouteComponents.Home />} />
+        <Route path="/" element={<RouteComponents.Main />} />
+        <Route path="/teroprofile" element={<RouteComponents.Profile />} />
       </Routes>
-      <FooterComponents.Footer />
+      <Components.ResableComponents.Footer />
     </Router>
   );
 }

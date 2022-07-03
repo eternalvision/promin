@@ -1,5 +1,5 @@
 import React from "react";
-import { navel, mainPhoto, waterMaterial1 } from "../../../img";
+import { navel, mainPhoto } from "../../../../img";
 // import { Link } from "react-router-dom";
 
 function Header() {
@@ -16,7 +16,10 @@ function Header() {
           <li>
             ALEXANDR PRYADCHENKO
             <br />
-            <span>web developer | designer || musician ||| from ukraine</span>
+            <span>
+              web developer | designer || musician ||| from <span className="ukr">ukr</span>
+              <span className="aine">aine</span>
+            </span>
           </li>
         </ul>
       </div>

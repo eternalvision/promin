@@ -1,5 +1,7 @@
-import Home from "./Home";
+import Main from "./Main";
+import Profile from "./Profile";
 
 export const RouteComponents = {
-  Home,
+  Main,
+  Profile,
 };

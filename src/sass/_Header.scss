@@ -7,7 +7,7 @@
 
 .NameAuthor {
   display: flex;
-  padding: 20px 20px 15px 20px;
+  padding: 20px 20px 20px 20px;
   li {
     &:first-child {
       margin-right: 20px;
@@ -31,13 +31,18 @@
       }
     }
     &:nth-child(3) {
-      font-family: "Dirtyline36Daysoftype2022";
-      margin-top: 10px;
+      margin-top: 15px;
       font-size: 55px;
       font-weight: 500;
       color: #2b2a29;
       span {
         font-size: 35px;
+        .ukr {
+          color: #ffd500;
+        }
+        .aine {
+          color: #005bbb;
+        }
       }
     }
   }

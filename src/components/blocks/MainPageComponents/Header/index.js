@@ -1,5 +1,5 @@
 import Header from "./Header";
 
-export const HeaderComponents = {
+export const HeaderComponent = {
   Header,
 };
