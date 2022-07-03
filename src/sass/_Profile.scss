@@ -1,0 +1,42 @@
+.NameAuthor {
+  display: flex;
+  padding: 20px;
+  li {
+    &:first-child {
+      margin-right: 20px;
+      z-index: 1;
+      position: relative;
+      img {
+        transition: all 250ms ease;
+        animation: rotate 15s linear infinite;
+        @keyframes rotate {
+          from {
+            transform: rotate(360deg);
+          }
+        }
+      }
+    }
+    &:nth-child(2) {
+      position: absolute;
+      img {
+        border-radius: 50%;
+        margin: 16px 0px 0px 15px;
+      }
+    }
+    &:nth-child(3) {
+      margin-top: 15px;
+      font-size: 55px;
+      font-weight: 500;
+      color: #2b2a29;
+      span {
+        font-size: 35px;
+        .ukr {
+          color: #ffd500;
+        }
+        .aine {
+          color: #005bbb;
+        }
+      }
+    }
+  }
+}

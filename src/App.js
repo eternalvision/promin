@@ -5,6 +5,7 @@ import { Components, RouteComponents } from "./components";
 function App() {
   return (
     <Router>
+      <Components.ResableComponents.Header />
       <Routes>
         <Route path="/" element={<RouteComponents.Main />} />
         <Route path="/teroprofile" element={<RouteComponents.Profile />} />

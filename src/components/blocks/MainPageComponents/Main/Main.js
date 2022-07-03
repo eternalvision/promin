@@ -1,8 +1,15 @@
 import React from "react";
 // import { Link } from "react-router-dom";
 
+import { Content } from "./Content";
+
 function Main() {
-  return <main className="App-main">main</main>;
+  return (
+    <main>
+      <Content.LayoutLeft />
+      {/* <Content.Friends /> */}
+    </main>
+  );
 }
 
 export default Main;
