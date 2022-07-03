@@ -24,7 +24,7 @@ function LayoutLeft() {
           <Link to="/development">Разработка</Link>
         </li>
         <li>
-          <Link to="/video">Видео</Link>
+          <Link to="/videos">Видео</Link>
         </li>
         <li>
           <Link to="/music">Музыка</Link>

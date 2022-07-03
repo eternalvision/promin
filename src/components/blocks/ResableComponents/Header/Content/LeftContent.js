@@ -5,7 +5,7 @@ function LeftContent() {
   return (
     <>
       <li className="Left-header-content">
-        <Link to="/popular">
+        <Link to="/">
           <ul className="Logo">
             <li>TEROPURE</li>
             {/* <li className="Logo-title">{strings.title}</li> */}

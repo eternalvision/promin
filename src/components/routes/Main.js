@@ -1,13 +1,9 @@
 import React from "react";
 
-import { Components } from "../index";
+import { RouteComponents } from "./index";
 
 function Main() {
-  return (
-    <>
-      <Components.MainPageComponents.MainComponent.Main />
-    </>
-  );
+  return <RouteComponents.ResableComponents.Blocks.LayoutLeft />;
 }
 
 export default Main;
