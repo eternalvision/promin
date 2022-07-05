@@ -1,5 +1,6 @@
 import articles from "./articles.png";
 import bookmark from "./bookmark.png";
+import camera from "./camera.png";
 import clock from "./clock.png";
 import design from "./design.png";
 import developing from "./developing.png";
@@ -13,6 +14,7 @@ import video from "./video.png";
 export const pngIcoBig = {
   articles,
   bookmark,
+  camera,
   clock,
   design,
   developing,

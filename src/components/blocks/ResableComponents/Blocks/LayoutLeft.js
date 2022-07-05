@@ -32,15 +32,27 @@ function LayoutLeft() {
           </Link>
         </li>
         <li>
-          <Link to="/design">
-            <img width={20} height={20} src={pngIcoSmall.design} alt="" />
-            Дизайн
+          <Link to="/articles">
+            <img width={20} height={20} src={pngIcoSmall.articles} alt="" />
+            Статьи
           </Link>
         </li>
         <li>
           <Link to="/development">
             <img width={20} height={20} src={pngIcoSmall.developing} alt="" />
             Разработка
+          </Link>
+        </li>
+        <li>
+          <Link to="/design">
+            <img width={20} height={20} src={pngIcoSmall.design} alt="" />
+            Дизайн
+          </Link>
+        </li>
+        <li>
+          <Link to="/photos">
+            <img width={20} height={20} src={pngIcoSmall.camera} alt="" />
+            Фото
           </Link>
         </li>
         <li>
@@ -56,9 +68,8 @@ function LayoutLeft() {
           </Link>
         </li>
         <li>
-          <Link to="/articles">
-            <img width={20} height={20} src={pngIcoSmall.articles} alt="" />
-            Статьи
+          <Link to="/about">
+            <img width={20} height={20} src={pngIcoSmall.aboutauthor} alt="" />О Авторе
           </Link>
         </li>
       </ul>
