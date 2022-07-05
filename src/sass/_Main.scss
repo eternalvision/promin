@@ -11,6 +11,9 @@ main {
       padding: 10px;
       display: block;
       margin: 1px;
+      img {
+        margin: 0px 10px -3px 0px;
+      }
     }
     &:hover {
       border-radius: 5px;

@@ -9,7 +9,7 @@ function App() {
       <main>
         <RouteComponents.Main />
         <Routes>
-          <Route path="/" element={<RouteComponents.Main />} />
+          {/* <Route path="/" element={<RouteComponents.Main />} /> */}
           <Route path="/popular" element={<RouteComponents.LayoutPages.Popular />} />
           <Route path="/new" element={<RouteComponents.LayoutPages.New />} />
           <Route path="/my/new" element={<RouteComponents.LayoutPages.MyNew />} />
