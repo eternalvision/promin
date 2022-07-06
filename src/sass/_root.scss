@@ -1,30 +1,42 @@
 :root {
   --body-bg-color: #f2f2f2;
   --body-bg-color-dark: #3b393f;
+  --body-bg-color-dark-hover: #4b484f;
   --additional-bg-color: #d7dadc;
   --white-color: #fff;
-  --black-color: #2c2c2c;
-  --blur: blur(10px);
+  --black-color: #000;
+  --blured: blur(10px);
+  --blured-invert: blur(0px);
   --border-radius: 8px;
   --height40: 40px;
-  --layout-reinvert: invert(0);
   --layout-invert: invert(100%);
+  --layout-reinvert: invert(0);
+  --dropdown-background-light: #fff;
+  --dropdown-background-dark: #a7a7a799;
 }
 
 body.light {
+  --blur: var(--blured-invert);
   --bg-color: var(--additional-bg-color);
   --invert-color: var(--black-color);
   --background-color: var(--body-bg-color);
   --layout-color: var(--black-color);
   --layout-color-hover: var(--white-color);
   --img-invert: var(--layout-reinvert);
+  --search-bg-color: var(--body-bg-color);
+  --search-bg-hover: var(--white-color);
+  --dropdown-invert: var(--dropdown-background-light);
 }
 
 body.dark {
+  --blur: var(--blured);
   --bg-color: var(--black-color);
   --invert-color: var(--additional-bg-color);
   --background-color: var(--body-bg-color-dark);
   --layout-color: var(--additional-bg-color);
   --layout-color-hover: var(--black-color);
   --img-invert: var(--layout-invert);
+  --search-bg-color: var(--body-bg-color-dark);
+  --search-bg-hover: var(--body-bg-color-dark-hover);
+  --dropdown-invert: var(--dropdown-background-dark);
 }

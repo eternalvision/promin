@@ -28,7 +28,6 @@ form {
 }
 
 .d1 {
-  filter: var(--img-invert);
   input {
     width: 100%;
     height: 40px;
@@ -36,10 +35,10 @@ form {
     border-radius: var(--border-radius);
     outline: none;
     border: none;
-    background: var(--white-color);
+    background: var(--search-bg-color);
     color: var(--black-color);
     &:hover {
-      background: var(--white-color);
+      background: var(--search-bg-hover);
     }
   }
   button {
@@ -71,8 +70,7 @@ form {
 }
 
 .d3 {
-  margin-left: 15px;
-  margin-top: 2px;
+  margin-left: 10px;
 }
 
 .Central-header-content {
@@ -82,12 +80,12 @@ form {
 .ui {
   padding: 8px;
   border-radius: var(--border-radius);
-  background-color: var(--white-color);
-  filter: var(--img-invert);
+  background: var(--search-bg-color);
 }
 
 .divider {
   font-size: 20px;
+  filter: var(--img-invert);
 }
 
 .text {
@@ -96,8 +94,11 @@ form {
 
 .ui.dropdown .menu {
   top: 120%;
-  background-color: var(--white-color);
+  background-color: var(--dropdown-invert);
   border-radius: var(--border-radius);
+  backdrop-filter: var(--blur);
+  -webkit-backdrop-filter: var(--blur);
+
   padding: 1px;
   box-shadow: none;
   border: none;
