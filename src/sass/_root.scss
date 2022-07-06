@@ -1,7 +1,30 @@
 :root {
   --body-bg-color: #f2f2f2;
+  --body-bg-color-dark: #3b393f;
   --additional-bg-color: #d7dadc;
   --white-color: #fff;
-  --black-color: #000;
+  --black-color: #2c2c2c;
   --blur: blur(10px);
+  --border-radius: 8px;
+  --height40: 40px;
+  --layout-reinvert: invert(0);
+  --layout-invert: invert(100%);
+}
+
+body.light {
+  --bg-color: var(--additional-bg-color);
+  --invert-color: var(--black-color);
+  --background-color: var(--body-bg-color);
+  --layout-color: var(--black-color);
+  --layout-color-hover: var(--white-color);
+  --img-invert: var(--layout-reinvert);
+}
+
+body.dark {
+  --bg-color: var(--black-color);
+  --invert-color: var(--additional-bg-color);
+  --background-color: var(--body-bg-color-dark);
+  --layout-color: var(--additional-bg-color);
+  --layout-color-hover: var(--black-color);
+  --img-invert: var(--layout-invert);
 }

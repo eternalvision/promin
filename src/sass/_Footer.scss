@@ -4,6 +4,6 @@
   -webkit-backdrop-filter: var(--blur);
   height: 220px;
   padding: 10px;
-  border-radius: 10px;
+  border-radius: var(--border-radius);
   margin: 0px 10px 10px 10px;
 }

@@ -26,6 +26,12 @@ function LayoutLeft() {
           </Link>
         </li>
         <li>
+          <Link to="/messenger">
+            <img width={20} height={20} src={pngIcoSmall.message} alt="" />
+            Мессенджер
+          </Link>
+        </li>
+        <li>
           <Link to="/bookmarks">
             <img width={20} height={20} src={pngIcoSmall.bookmark} alt="" />
             Закладки

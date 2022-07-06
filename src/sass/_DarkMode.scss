@@ -1,0 +1,18 @@
+#darkMode {
+  background: transparent url("./moon.png") no-repeat center;
+  filter: var(--img-invert);
+  background-size: 32px 32px;
+  width: 40px;
+  height: 40px;
+  border: none;
+  border-radius: 50%;
+}
+
+#darkMode:hover {
+  cursor: pointer;
+}
+
+// #darkMode:focus {
+//   background-color: var(--white-color);
+//   cursor: pointer;
+// }

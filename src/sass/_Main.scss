@@ -4,20 +4,30 @@ main {
 }
 
 .Layout-left {
-  margin: 20px 0 0 10px;
+  margin: 10px 0 0 5px;
   width: 220px;
+  ul {
+    border-radius: var(--border-radius);
+    padding: 5px;
+  }
   li {
+    border-radius: var(--border-radius);
     a {
+      margin: 1px;
       padding: 10px;
       display: block;
-      margin: 1px;
+      font-size: 20px;
+      color: var(--layout-color);
       img {
         margin: 0px 10px -3px 0px;
+        filter: var(--img-invert);
+      }
+      &:hover {
+        color: var(--layout-color);
       }
     }
     &:hover {
-      border-radius: 5px;
-      background-color: var(--white-color);
+      background-color: var(--layout-color-hover);
     }
   }
 }

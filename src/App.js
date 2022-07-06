@@ -13,6 +13,7 @@ function App() {
           <Route path="/popular" element={<RouteComponents.LayoutPages.Popular />} />
           <Route path="/new" element={<RouteComponents.LayoutPages.New />} />
           <Route path="/my/new" element={<RouteComponents.LayoutPages.MyNew />} />
+          <Route path="/messenger" element={<RouteComponents.LayoutPages.Messenger />} />
           <Route path="/bookmarks" element={<RouteComponents.LayoutPages.Bookmarks />} />
           <Route path="/design" element={<RouteComponents.LayoutPages.Design />} />
           <Route path="/development" element={<RouteComponents.LayoutPages.Development />} />

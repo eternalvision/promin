@@ -3,6 +3,7 @@ import Articles from "./Articles";
 import Bookmarks from "./Bookmarks";
 import Design from "./Design";
 import Development from "./Development";
+import Messenger from "./Messenger";
 import Music from "./Music";
 import MyNew from "./MyNew";
 import New from "./New";
@@ -16,6 +17,7 @@ export const LayoutPages = {
   Bookmarks,
   Design,
   Development,
+  Messenger,
   Music,
   MyNew,
   New,
