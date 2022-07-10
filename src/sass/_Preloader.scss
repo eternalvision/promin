@@ -4,8 +4,10 @@
   top: 0;
   right: 0;
   bottom: 0;
-  background: var(--bg-color);
+  overflow: hidden;
+  background-color: var(--preloader-bg);
   z-index: 1001;
+  // border-radius: var(--border-radius);
 }
 
 .preloader__row {
@@ -18,19 +20,19 @@
   margin-left: -35px;
   padding: 10px;
   text-align: center;
-  animation: preloader-rotate 3s infinite linear;
+  animation: preloader-rotate 2s infinite linear;
+  background-color: var(--preloader-bg);
 }
 
 .preloader__item {
   position: absolute;
   display: inline-block;
   top: 0;
-  background-color: #000;
-  filter: var(--img-invert);
+  background-color: var(--invert-color);
   border-radius: 100%;
   width: 35px;
   height: 35px;
-  animation: preloader-bounce 3s infinite ease-in-out;
+  animation: preloader-bounce 2s infinite ease-in-out;
 }
 
 .preloader__item:last-child {
@@ -57,7 +59,7 @@
 }
 
 .loaded_hiding .preloader {
-  transition: 2s opacity;
+  transition: 0.3s opacity;
   opacity: 0;
 }
 
