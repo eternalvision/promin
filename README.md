@@ -1,5 +1,1 @@
-# teropure
-personal portfolio
-
-
-⸰ THE ETERNAL RADIENCE OF PURE REASON ⸰
+# the eternal radiance of reason
