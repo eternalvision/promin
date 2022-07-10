@@ -12,7 +12,11 @@
   --layout-invert: invert(100%);
   --layout-reinvert: invert(0);
   --dropdown-background-light: #fff;
+  --dropdown-background-light-hover: #ececec;
   --dropdown-background-dark: #a7a7a799;
+  --dropdown-background-dark-hover: #929191e3;
+  --preloader-light-bg: #f2f2f2d7;
+  --preloader-dark-bg: rgba(0, 0, 0, 0.842);
 }
 
 body.light {
@@ -26,6 +30,8 @@ body.light {
   --search-bg-color: var(--body-bg-color);
   --search-bg-hover: var(--white-color);
   --dropdown-invert: var(--dropdown-background-light);
+  --dropdown-invert-hover: var(--dropdown-background-light-hover);
+  --preloader-bg: var(--preloader-light-bg);
 }
 
 body.dark {
@@ -39,4 +45,6 @@ body.dark {
   --search-bg-color: var(--body-bg-color-dark);
   --search-bg-hover: var(--body-bg-color-dark-hover);
   --dropdown-invert: var(--dropdown-background-dark);
+  --dropdown-invert-hover: var(--dropdown-background-dark-hover);
+  --preloader-bg: var(--preloader-dark-bg);
 }

@@ -107,6 +107,10 @@ form {
 .ui.dropdown .menu > .item {
   border-radius: var(--border-radius);
   margin: 5px;
+
+  &:hover {
+    background-color: var(--dropdown-invert-hover);
+  }
 }
 
 .spancreated {

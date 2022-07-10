@@ -1,10 +1,17 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import { Components, RouteComponents } from "./components";
+// import { Rings } from "react-loader-spinner";
 
 function App() {
   return (
     <Router>
+      <div className="preloader">
+        <div className="preloader__row">
+          <div className="preloader__item"></div>
+          <div className="preloader__item"></div>
+        </div>
+      </div>
       <Components.ResableComponents.Header />
       <main>
         <RouteComponents.Main />

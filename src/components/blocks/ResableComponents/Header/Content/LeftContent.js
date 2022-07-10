@@ -8,9 +8,8 @@ function LeftContent() {
       <li className="Left-header-content">
         <Link to="/">
           <ul className="Logo">
-            <li>
-              {/* <img width={300} height={65} src={teropureico} alt="" /> */}
-              TEROPURE
+            <li title="the eternal radiance of reason">
+              {/* <img width={300} height={65} src={teropureico} alt="" /> */}TEROR
             </li>
           </ul>
         </Link>
