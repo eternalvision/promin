@@ -10,14 +10,22 @@ Header {
   padding: 20px;
   margin-bottom: 0;
   color: var(--black-color);
+  align-items: center;
 }
 
 .Logo {
   li:first-child {
+    background-color: var(--black-color);
+    border-radius: var(--border-radius);
     font-family: "Dirtyline36Daysoftype2022", sans-serif !important;
-    font-size: 30px;
-    color: var(--invert-color);
-    padding: 15px 0px 0px 10px;
+    font-size: 40px;
+    // font-weight: bold;
+    color: var(--additional-bg-color);
+
+    padding: 15px 5px 5px;
+    span {
+      font-family: "Dirtyline36Daysoftype2022", sans-serif !important;
+    }
   }
 }
 
@@ -92,18 +100,22 @@ form {
   font-size: 20px;
 }
 
-.ui.dropdown .menu {
-  top: 120%;
-  background-color: var(--dropdown-invert);
-  border-radius: var(--border-radius);
-  backdrop-filter: var(--blur);
-  -webkit-backdrop-filter: var(--blur);
+.ui.dropdown {
+  &:active {
+    background: var(--search-bg-hover);
+  }
+  .menu {
+    top: 120%;
+    background-color: var(--dropdown-invert);
+    border-radius: var(--border-radius);
+    backdrop-filter: var(--blur);
+    -webkit-backdrop-filter: var(--blur);
 
-  padding: 1px;
-  box-shadow: none;
-  border: none;
+    padding: 1px;
+    box-shadow: none;
+    border: none;
+  }
 }
-
 .ui.dropdown .menu > .item {
   border-radius: var(--border-radius);
   margin: 5px;

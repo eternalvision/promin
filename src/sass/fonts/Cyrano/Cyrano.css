@@ -1,0 +1,8 @@
+/* Webfont: Dirtyline36Daysoftype2022-Reg */
+@font-face {
+  font-family: "Cyrano";
+  src: url("Cyrano.otf") format("opentype");
+  font-style: normal;
+  font-weight: normal;
+  text-rendering: optimizeLegibility;
+}

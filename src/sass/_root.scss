@@ -23,9 +23,10 @@ body.light {
   --blur: var(--blured-invert);
   --bg-color: var(--additional-bg-color);
   --invert-color: var(--black-color);
+  --reinver-color: var(--white-color);
   --background-color: var(--body-bg-color);
   --layout-color: var(--black-color);
-  --layout-color-hover: var(--white-color);
+  --layout-color-hover: var(--additional-bg-color);
   --img-invert: var(--layout-reinvert);
   --search-bg-color: var(--body-bg-color);
   --search-bg-hover: var(--white-color);
@@ -38,6 +39,7 @@ body.dark {
   --blur: var(--blured);
   --bg-color: var(--black-color);
   --invert-color: var(--additional-bg-color);
+  --reinver-color: var(--black-color);
   --background-color: var(--body-bg-color-dark);
   --layout-color: var(--additional-bg-color);
   --layout-color-hover: var(--black-color);
