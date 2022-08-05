@@ -7,6 +7,10 @@ main {
   margin: 10px 0 0 5px;
   width: 220px;
   ul {
+    // position: sticky;
+    // top: 0;
+    // left: 0;
+    // position: -webkit-sticky;
     border-radius: var(--border-radius);
     padding: 5px;
   }

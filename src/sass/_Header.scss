@@ -1,30 +1,39 @@
 Header {
   background-color: var(--bg-color);
   border-radius: var(--border-radius);
-  margin: 10px 10px 0px 10px;
+  margin: 10px 10px 0px;
 }
 
 .Menu-list {
   display: flex;
   justify-content: space-between;
-  padding: 20px;
+  align-items: center;
+  padding: 10px;
   margin-bottom: 0;
   color: var(--black-color);
   align-items: center;
+  li {
+    &:first-child {
+      padding-top: 5px;
+    }
+  }
 }
 
 .Logo {
   li:first-child {
-    background-color: var(--black-color);
-    border-radius: var(--border-radius);
-    font-family: "Dirtyline36Daysoftype2022", sans-serif !important;
-    font-size: 40px;
-    // font-weight: bold;
-    color: var(--additional-bg-color);
-
-    padding: 15px 5px 5px;
-    span {
-      font-family: "Dirtyline36Daysoftype2022", sans-serif !important;
+    padding-left: 10px;
+    p {
+      background-color: var(--bg-color);
+      line-height: normal;
+      // background: linear-gradient(90deg, #ffd500, #005abb);
+      border-radius: var(--border-radius);
+      font-family: "NymphaTrial", sans-serif !important;
+      font-size: 35px;
+      color: var(--layout-color);
+      // padding: 5px 5px 0px;
+      span {
+        font-family: "NymphaTrial", sans-serif !important;
+      }
     }
   }
 }
@@ -74,7 +83,7 @@ form {
 .d1,
 .d2 {
   margin-left: 20px;
-  margin-top: 2px;
+  // margin-top: 2px;
 }
 
 .d3 {
@@ -83,6 +92,8 @@ form {
 
 .Central-header-content {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .ui {
@@ -127,4 +138,8 @@ form {
 
 .spancreated {
   font-size: 20px;
+}
+
+.Right-header-content {
+  display: flex;
 }
