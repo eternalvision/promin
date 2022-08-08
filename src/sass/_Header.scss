@@ -25,12 +25,10 @@ Header {
     p {
       background-color: var(--bg-color);
       line-height: normal;
-      // background: linear-gradient(90deg, #ffd500, #005abb);
       border-radius: var(--border-radius);
       font-family: "NymphaTrial", sans-serif !important;
       font-size: 35px;
       color: var(--layout-color);
-      // padding: 5px 5px 0px;
       span {
         font-family: "NymphaTrial", sans-serif !important;
       }
@@ -83,7 +81,6 @@ form {
 .d1,
 .d2 {
   margin-left: 20px;
-  // margin-top: 2px;
 }
 
 .d3 {
@@ -121,7 +118,6 @@ form {
     border-radius: var(--border-radius);
     backdrop-filter: var(--blur);
     -webkit-backdrop-filter: var(--blur);
-
     padding: 1px;
     box-shadow: none;
     border: none;
@@ -142,4 +138,41 @@ form {
 
 .Right-header-content {
   display: flex;
+  section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &:nth-child(1) {
+      button {
+        background: transparent url("./imgs/alarm.png") no-repeat center;
+        filter: var(--img-invert);
+        background-size: 34px;
+        width: 34px;
+        height: 34px;
+        border: none;
+        &:hover {
+          cursor: pointer;
+        }
+      }
+    }
+    &:nth-child(2) {
+      padding-right: 80px;
+      padding-left: 20px;
+      button {
+        background: transparent url("./imgs/user.png") no-repeat center;
+        filter: var(--img-invert);
+        background-size: 34px;
+        width: 34px;
+        height: 34px;
+        border: none;
+        span {
+          font-size: 20px;
+          padding-left: 40px;
+        }
+        &:hover {
+          cursor: pointer;
+        }
+      }
+    }
+  }
 }

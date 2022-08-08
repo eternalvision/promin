@@ -1,9 +1,38 @@
-import React from "react";
+import React, { useState } from "react";
 import { Dropdown } from "semantic-ui-react";
 import { pngIcoSmall } from "../../../../../img/50";
 import DarkMode from "./DarkMode";
+import Modal from "react-modal";
+
+Modal.setAppElement("#root");
 
 function CentralContent() {
+  const [isOpenEntry, setIsOpenEntry] = useState(false);
+  const [isOpenBlog, setIsOpenBlog] = useState(false);
+  const [isOpenPhoto, setIsOpenPhoto] = useState(false);
+  const [isOpenVideo, setIsOpenVideo] = useState(false);
+  const [isOpenMusic, setIsOpenMusic] = useState(false);
+
+  function ModalEntry() {
+    setIsOpenEntry(!isOpenEntry);
+  }
+
+  function ModalBlog() {
+    setIsOpenBlog(!isOpenBlog);
+  }
+
+  function ModalPhoto() {
+    setIsOpenPhoto(!isOpenPhoto);
+  }
+
+  function ModalVideo() {
+    setIsOpenVideo(!isOpenVideo);
+  }
+
+  function ModalMusic() {
+    setIsOpenMusic(!isOpenMusic);
+  }
+
   return (
     <>
       <li className="Central-header-content">
@@ -19,6 +48,7 @@ function CentralContent() {
           <Dropdown text="Создать">
             <Dropdown.Menu>
               <Dropdown.Item
+                onClick={ModalEntry}
                 text={
                   <>
                     <img width={25} height={25} src={pngIcoSmall.entry} alt="" />
@@ -27,6 +57,7 @@ function CentralContent() {
                 }
               />
               <Dropdown.Item
+                onClick={ModalBlog}
                 text={
                   <>
                     <img width={25} height={25} src={pngIcoSmall.blog} alt="" />
@@ -35,6 +66,7 @@ function CentralContent() {
                 }
               />
               <Dropdown.Item
+                onClick={ModalPhoto}
                 text={
                   <>
                     <img width={25} height={25} src={pngIcoSmall.camera} alt="" />
@@ -43,6 +75,7 @@ function CentralContent() {
                 }
               />
               <Dropdown.Item
+                onClick={ModalVideo}
                 text={
                   <>
                     <img width={25} height={25} src={pngIcoSmall.video} alt="" />
@@ -51,6 +84,7 @@ function CentralContent() {
                 }
               />
               <Dropdown.Item
+                onClick={ModalMusic}
                 text={
                   <>
                     <img width={25} height={25} src={pngIcoSmall.music} alt="" />
@@ -65,6 +99,26 @@ function CentralContent() {
           <DarkMode />
         </section>
       </li>
+      <Modal isOpen={isOpenEntry} onRequestClose={ModalEntry}>
+        <button onClick={ModalEntry}>x</button>
+        entry
+      </Modal>
+      <Modal isOpen={isOpenBlog} onRequestClose={ModalBlog}>
+        <button onClick={ModalBlog}>x</button>
+        blog
+      </Modal>
+      <Modal isOpen={isOpenPhoto} onRequestClose={ModalPhoto}>
+        <button onClick={ModalPhoto}>x</button>
+        photo
+      </Modal>
+      <Modal isOpen={isOpenVideo} onRequestClose={ModalVideo}>
+        <button onClick={ModalVideo}>x</button>
+        video
+      </Modal>
+      <Modal isOpen={isOpenMusic} onRequestClose={ModalMusic}>
+        <button onClick={ModalMusic}>x</button>
+        music
+      </Modal>
     </>
   );
 }

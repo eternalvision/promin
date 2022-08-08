@@ -1,0 +1,25 @@
+.ReactModalPortal {
+  div {
+    &:first-child {
+      backdrop-filter: var(--blured);
+      -webkit-backdrop-filter: var(--blured);
+      background-color: var(--dropdown-background-dark) !important;
+    }
+  }
+}
+.ReactModal__Content {
+  padding: 10px !important;
+  border: none !important;
+  border-radius: var(--border-radius) !important;
+  width: 450px;
+  margin: 0 auto;
+  button {
+    float: right;
+    border: none;
+    background-color: var(--bg-color);
+    padding: 0px 10px 5px;
+    color: var(--invert-color);
+    font-size: 35px;
+    border-radius: var(--border-radius) !important;
+  }
+}
