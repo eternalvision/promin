@@ -1,25 +1,70 @@
-.ReactModalPortal {
-  div {
-    &:first-child {
-      backdrop-filter: var(--blured);
-      -webkit-backdrop-filter: var(--blured);
-      background-color: var(--dropdown-background-dark) !important;
-    }
-  }
+.ReactModal__Overlay {
+  background-color: var(--modal-bg-color) !important;
+  backdrop-filter: var(--blured);
+  -webkit-backdrop-filter: var(--blured);
 }
+
 .ReactModal__Content {
   padding: 10px !important;
   border: none !important;
   border-radius: var(--border-radius) !important;
-  width: 450px;
+  background-color: var(--dropdown-background-dark) !important;
+  backdrop-filter: var(--blured);
+  -webkit-backdrop-filter: var(--blured);
+  max-width: 800px;
   margin: 0 auto;
   button {
     float: right;
     border: none;
-    background-color: var(--bg-color);
     padding: 0px 10px 5px;
-    color: var(--invert-color);
     font-size: 35px;
     border-radius: var(--border-radius) !important;
+    // background: var(--search-bg-color);
+    filter: var(--img-invert);
+  }
+  div {
+    display: flex;
+  }
+}
+
+.Auth-forms {
+  justify-content: space-evenly;
+  margin-top: 100px;
+  // flex-direction: column;
+  section {
+  }
+}
+
+.Registration-form,
+.Login-form {
+  padding: 10px;
+  p {
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+  }
+  form {
+    display: block;
+    label {
+      display: block;
+      span {
+        font-size: 18px;
+      }
+      input {
+        margin: 5px 0 15px 0;
+        width: 100%;
+        height: 40px;
+        padding: 0px 10px;
+        border-radius: var(--border-radius);
+        outline: none;
+        border: none;
+        background: var(--search-bg-color);
+        color: var(--black-color);
+      }
+    }
+    button {
+      padding: 8px;
+      font-size: 20px;
+    }
   }
 }

@@ -1,5 +1,7 @@
 :root {
   --body-bg-color: #f2f2f2;
+  --modal-bg-color-dark: #1b1b1b99;
+  --modal-bg-color-white: #d3d3d399;
   --body-bg-color-dark: #3b393f;
   --body-bg-color-dark-hover: #4b484f;
   --additional-bg-color: #d7dadc;
@@ -22,6 +24,7 @@
 body.light {
   --blur: var(--blured-invert);
   --bg-color: var(--additional-bg-color);
+  --modal-bg-color: var(--modal-bg-color-white);
   --invert-color: var(--black-color);
   --reinver-color: var(--white-color);
   --background-color: var(--body-bg-color);
@@ -38,6 +41,7 @@ body.light {
 body.dark {
   --blur: var(--blured);
   --bg-color: var(--black-color);
+  --modal-bg-color: var(--modal-bg-color-dark);
   --invert-color: var(--additional-bg-color);
   --reinver-color: var(--black-color);
   --background-color: var(--body-bg-color-dark);

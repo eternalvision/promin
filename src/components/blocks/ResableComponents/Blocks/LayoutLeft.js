@@ -10,13 +10,13 @@ function LayoutLeft() {
         <li>
           <Link to="/popular">
             <img width={20} height={20} src={pngIcoSmall.fire} alt="" />
-            Популярное
+            Популярне
           </Link>
         </li>
         <li>
           <Link to="/new">
             <img width={20} height={20} src={pngIcoSmall.newpost} alt="" />
-            Свежее
+            Свіже
           </Link>
         </li>
         <li>
@@ -28,7 +28,7 @@ function LayoutLeft() {
         <li>
           <Link to="/messenger">
             <img width={20} height={20} src={pngIcoSmall.message} alt="" />
-            Мессенджер
+            Месенджер
           </Link>
         </li>
         <li>
@@ -40,13 +40,13 @@ function LayoutLeft() {
         <li>
           <Link to="/articles">
             <img width={20} height={20} src={pngIcoSmall.articles} alt="" />
-            Статьи
+            Статті
           </Link>
         </li>
         <li>
           <Link to="/development">
             <img width={20} height={20} src={pngIcoSmall.developing} alt="" />
-            Разработка
+            Розробка
           </Link>
         </li>
         <li>
@@ -64,18 +64,19 @@ function LayoutLeft() {
         <li>
           <Link to="/videos">
             <img width={20} height={20} src={pngIcoSmall.video} alt="" />
-            Видео
+            Відео
           </Link>
         </li>
         <li>
           <Link to="/music">
             <img width={20} height={20} src={pngIcoSmall.music} alt="" />
-            Музыка
+            Музика
           </Link>
         </li>
         <li>
           <Link to="/about">
-            <img width={20} height={20} src={pngIcoSmall.aboutauthor} alt="" />О Авторе
+            <img width={20} height={20} src={pngIcoSmall.aboutauthor} alt="" />
+            Про Автора
           </Link>
         </li>
       </ul>

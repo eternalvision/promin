@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Dropdown } from "semantic-ui-react";
 import { pngIcoSmall } from "../../../../../img/50";
-import DarkMode from "./DarkMode";
+
 import Modal from "react-modal";
 
 Modal.setAppElement("#root");
@@ -12,6 +12,12 @@ function CentralContent() {
   const [isOpenPhoto, setIsOpenPhoto] = useState(false);
   const [isOpenVideo, setIsOpenVideo] = useState(false);
   const [isOpenMusic, setIsOpenMusic] = useState(false);
+
+  const [search, setSearch] = useState("");
+
+  function customSearch() {
+    console.log(`search: ${search}`);
+  }
 
   function ModalEntry() {
     setIsOpenEntry(!isOpenEntry);
@@ -37,22 +43,20 @@ function CentralContent() {
     <>
       <li className="Central-header-content">
         <section className="d1">
-          <form action="" method="get">
-            <input name="s" placeholder="Введите текст" type="search" />
-            <button type="submit">
-              <img width={25} height={25} src={pngIcoSmall.searchwhite} alt="" />
-            </button>
-          </form>
+          <input name="search" placeholder="Пошук" type="search" onChange={(event) => setSearch(event.target.value)} />
+          <button onClick={customSearch}>
+            <img width={25} height={25} src={pngIcoSmall.searchwhite} alt="" />
+          </button>
         </section>
         <section className="d2">
-          <Dropdown text="Создать">
+          <Dropdown text="Створити">
             <Dropdown.Menu>
               <Dropdown.Item
                 onClick={ModalEntry}
                 text={
                   <>
                     <img width={25} height={25} src={pngIcoSmall.entry} alt="" />
-                    <span className="spancreated">Запись</span>
+                    <span className="spancreated">Запис</span>
                   </>
                 }
               />
@@ -79,7 +83,7 @@ function CentralContent() {
                 text={
                   <>
                     <img width={25} height={25} src={pngIcoSmall.video} alt="" />
-                    <span className="spancreated">Видео</span>
+                    <span className="spancreated">Відео</span>
                   </>
                 }
               />
@@ -88,15 +92,12 @@ function CentralContent() {
                 text={
                   <>
                     <img width={25} height={25} src={pngIcoSmall.music} alt="" />
-                    <span className="spancreated">Музыка</span>
+                    <span className="spancreated">Музика</span>
                   </>
                 }
               />
             </Dropdown.Menu>
           </Dropdown>
-        </section>
-        <section className="d3">
-          <DarkMode />
         </section>
       </li>
       <Modal isOpen={isOpenEntry} onRequestClose={ModalEntry}>
