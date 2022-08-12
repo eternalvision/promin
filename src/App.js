@@ -15,24 +15,26 @@ function App() {
       <Components.ResableComponents.Header />
       <main>
         <RouteComponents.Main />
-        <Routes>
-          <Route path="/" element={<RouteComponents.LayoutPages.Popular />} />
-          <Route path="/popular" element={<RouteComponents.LayoutPages.Popular />} />
-          <Route path="/new" element={<RouteComponents.LayoutPages.New />} />
-          <Route path="/my/new" element={<RouteComponents.LayoutPages.MyNew />} />
-          <Route path="/messenger" element={<RouteComponents.LayoutPages.Messenger />} />
-          <Route path="/bookmarks" element={<RouteComponents.LayoutPages.Bookmarks />} />
-          <Route path="/design" element={<RouteComponents.LayoutPages.Design />} />
-          <Route path="/development" element={<RouteComponents.LayoutPages.Development />} />
-          <Route path="/videos" element={<RouteComponents.LayoutPages.Videos />} />
-          <Route path="/photos" element={<RouteComponents.LayoutPages.Photos />} />
-          <Route path="/music" element={<RouteComponents.LayoutPages.Music />} />
-          <Route path="/articles" element={<RouteComponents.LayoutPages.Articles />} />
-          <Route path="/about" element={<RouteComponents.LayoutPages.About />} />
-          <Route path="/teroprofile" element={<RouteComponents.Profile />} />
-        </Routes>
+        <section className="Rear-block">
+          <Routes>
+            <Route path="/" element={<RouteComponents.LayoutPages.Popular />} />
+            <Route path="/popular" element={<RouteComponents.LayoutPages.Popular />} />
+            <Route path="/new" element={<RouteComponents.LayoutPages.New />} />
+            <Route path="/my/new" element={<RouteComponents.LayoutPages.MyNew />} />
+            <Route path="/messenger" element={<RouteComponents.LayoutPages.Messenger />} />
+            <Route path="/bookmarks" element={<RouteComponents.LayoutPages.Bookmarks />} />
+            <Route path="/design" element={<RouteComponents.LayoutPages.Design />} />
+            <Route path="/development" element={<RouteComponents.LayoutPages.Development />} />
+            <Route path="/videos" element={<RouteComponents.LayoutPages.Videos />} />
+            <Route path="/photos" element={<RouteComponents.LayoutPages.Photos />} />
+            <Route path="/music" element={<RouteComponents.LayoutPages.Music />} />
+            <Route path="/articles" element={<RouteComponents.LayoutPages.Articles />} />
+            <Route path="/about" element={<RouteComponents.LayoutPages.About />} />
+            <Route path="/teroprofile" element={<RouteComponents.Profile />} />
+          </Routes>
+        </section>
       </main>
-      {/* <Components.ResableComponents.Footer /> */}
+      <Components.ResableComponents.Footer />
     </Router>
   );
 }
