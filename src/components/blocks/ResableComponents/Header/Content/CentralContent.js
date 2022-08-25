@@ -55,7 +55,7 @@ function CentralContent() {
                 onClick={ModalEntry}
                 text={
                   <>
-                    <img width={25} height={25} src={pngIcoSmall.entry} alt="" />
+                    <img className="dropdown-img" width={25} height={25} src={pngIcoSmall.entry} alt="" />
                     <span className="spancreated">Запис</span>
                   </>
                 }
@@ -64,7 +64,7 @@ function CentralContent() {
                 onClick={ModalBlog}
                 text={
                   <>
-                    <img width={25} height={25} src={pngIcoSmall.blog} alt="" />
+                    <img className="dropdown-img" width={25} height={25} src={pngIcoSmall.blog} alt="" />
                     <span className="spancreated">Блог</span>
                   </>
                 }
@@ -73,7 +73,7 @@ function CentralContent() {
                 onClick={ModalPhoto}
                 text={
                   <>
-                    <img width={25} height={25} src={pngIcoSmall.camera} alt="" />
+                    <img className="dropdown-img" width={25} height={25} src={pngIcoSmall.camera} alt="" />
                     <span className="spancreated">Фото</span>
                   </>
                 }
@@ -82,7 +82,7 @@ function CentralContent() {
                 onClick={ModalVideo}
                 text={
                   <>
-                    <img width={25} height={25} src={pngIcoSmall.video} alt="" />
+                    <img className="dropdown-img" width={25} height={25} src={pngIcoSmall.video} alt="" />
                     <span className="spancreated">Відео</span>
                   </>
                 }
@@ -91,7 +91,7 @@ function CentralContent() {
                 onClick={ModalMusic}
                 text={
                   <>
-                    <img width={25} height={25} src={pngIcoSmall.music} alt="" />
+                    <img className="dropdown-img" width={25} height={25} src={pngIcoSmall.music} alt="" />
                     <span className="spancreated">Музика</span>
                   </>
                 }

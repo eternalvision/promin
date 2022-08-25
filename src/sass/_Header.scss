@@ -26,11 +26,11 @@ Header {
       background-color: var(--bg-color);
       line-height: normal;
       border-radius: var(--border-radius);
-      font-family: "NymphaTrial", sans-serif !important;
+      font-family: "Dirtyline36Daysoftype2022", sans-serif !important;
       font-size: 35px;
       color: var(--layout-color);
       span {
-        font-family: "NymphaTrial", sans-serif !important;
+        font-family: "Dirtyline36Daysoftype2022", sans-serif !important;
       }
     }
   }
@@ -43,11 +43,11 @@ form {
 }
 
 .d1 {
-  padding-right: 75px;
+  padding-right: 70px;
   position: relative;
   input {
     width: 100%;
-    height: 40px;
+    height: 38px;
     padding: 0px 10px;
     border-radius: var(--border-radius) 0 0 var(--border-radius);
     outline: none;
@@ -64,7 +64,7 @@ form {
       filter: var(--img-invert);
     }
     position: absolute;
-    height: 40px;
+    height: 38px;
     border: none;
     background-color: var(--invert-color);
     padding: 0px 15px;
@@ -99,6 +99,7 @@ form {
 }
 
 .ui.dropdown {
+  height: 38px;
   &:active {
     background: var(--search-bg-hover);
   }
@@ -111,15 +112,21 @@ form {
     padding: 1px;
     box-shadow: none;
     border: none;
+    .item {
+      height: 38px;
+    }
   }
 }
 .ui.dropdown .menu > .item {
   border-radius: var(--border-radius);
   margin: 5px;
-
   &:hover {
     background-color: var(--dropdown-invert-hover);
   }
+}
+
+.dropdown-img {
+  margin-right: 10px !important;
 }
 
 .spancreated {
@@ -139,9 +146,9 @@ form {
       button {
         background: transparent url("./imgs/alarm.png") no-repeat center;
         filter: var(--img-invert);
-        background-size: 34px;
-        width: 34px;
-        height: 34px;
+        background-size: 30px;
+        width: 30px;
+        height: 30px;
         border: none;
         &:hover {
           cursor: pointer;
@@ -154,9 +161,9 @@ form {
       button {
         background: transparent url("./imgs/user.png") no-repeat center;
         filter: var(--img-invert);
-        background-size: 34px;
-        width: 34px;
-        height: 34px;
+        background-size: 30px;
+        width: 30px;
+        height: 30px;
         border: none;
         span {
           font-size: 20px;
