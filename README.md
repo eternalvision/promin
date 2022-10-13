@@ -1,1 +1,2 @@
-# the eternal radiance of reason
+# the eternal radiance of reason - TEROR
+Прототип нової української соцмережі
