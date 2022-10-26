@@ -10,6 +10,8 @@ import mynew from "./mynew.png";
 import newpost from "./newpost.png";
 import search from "./search.png";
 import video from "./video.png";
+import ray from "./ray.png";
+
 
 export const pngIcoBig = {
   articles,
@@ -24,4 +26,5 @@ export const pngIcoBig = {
   newpost,
   search,
   video,
+  ray
 };

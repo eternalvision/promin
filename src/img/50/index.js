@@ -15,6 +15,7 @@ import newpost from "./newpost.png";
 import search from "./search.png";
 import searchwhite from "./searchwhite.png";
 import video from "./video.png";
+import ray from "./ray.png";
 
 export const pngIcoSmall = {
   aboutauthor,
@@ -34,4 +35,5 @@ export const pngIcoSmall = {
   search,
   searchwhite,
   video,
+  ray
 };

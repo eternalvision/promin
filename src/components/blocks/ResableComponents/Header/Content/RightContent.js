@@ -39,7 +39,7 @@ function RightContent() {
       </section>
       <section>
         <button onClick={toggleModal}>
-          <span>Войти</span>
+          <span>Увійти</span>
         </button>
       </section>
 

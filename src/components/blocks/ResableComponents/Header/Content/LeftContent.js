@@ -1,6 +1,5 @@
 import React from "react";
 import { Link } from "react-router-dom";
-// import teropureico from "./teropureico.png";
 
 function LeftContent() {
   return (
@@ -8,11 +7,10 @@ function LeftContent() {
       <li className="Left-header-content">
         <Link to="/">
           <ul className="Logo">
-            <li title="the eternal radiance of reason">
+            <li>
               <p>
-                {/* <img width={300} height={65} src={teropureico} alt="" /> */}
-                TEROR.<span className="ukr">U</span>
-                <span className="aine">A</span>
+                ПРОМIНЬ.<span className="ukr">U</span>
+                <span className="aine">А</span>
               </p>
             </li>
           </ul>

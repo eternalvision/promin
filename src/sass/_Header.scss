@@ -8,7 +8,7 @@ Header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px;
+  padding: 15px;
   margin-bottom: 0;
   color: var(--black-color);
   align-items: center;
@@ -26,11 +26,12 @@ Header {
       background-color: var(--bg-color);
       line-height: normal;
       border-radius: var(--border-radius);
-      font-family: "Dirtyline36Daysoftype2022", sans-serif !important;
-      font-size: 35px;
+      font-family: "ODB", sans-serif !important;
+      font-size: 27px;
+      margin-top: -6px !important;
       color: var(--layout-color);
       span {
-        font-family: "Dirtyline36Daysoftype2022", sans-serif !important;
+        font-family: "ODB", sans-serif !important;
       }
     }
   }
@@ -135,6 +136,7 @@ form {
 
 .Right-header-content {
   display: flex;
+
   section {
     display: flex;
     justify-content: space-between;
@@ -167,7 +169,7 @@ form {
         border: none;
         span {
           font-size: 20px;
-          padding-left: 40px;
+          padding-left: 35px;
         }
         &:hover {
           cursor: pointer;
