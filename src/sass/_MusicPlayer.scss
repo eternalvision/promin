@@ -19,6 +19,8 @@
   }
 
   .music-player-panel {
+    box-shadow: none !important;
+    color: var(--layout-color) !important;
     .img-content {
       box-shadow: none !important;
       border: 2px solid var(--invert-color);
