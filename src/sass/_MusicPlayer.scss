@@ -1,0 +1,119 @@
+.react-jinke-music-player-main.light-theme {
+  svg {
+    color: var(--invert-color) !important;
+
+    &:active,
+    &:hover {
+      color: var(--dropdown-background-dark-hover) !important;
+    }
+  }
+
+  .audio-lists-panel {
+    .audio-item.playing {
+      background-color: var(--bg-color) !important;
+    }
+  }
+
+  .audio-lists-panel-header {
+    border-bottom: none !important;
+  }
+
+  .music-player-panel {
+    .img-content {
+      box-shadow: none !important;
+      border: 2px solid var(--invert-color);
+    }
+  }
+
+  .play-mode-title {
+    border-radius: var(--border-radius);
+    color: var(--bg-color) !important;
+  }
+}
+
+.audio-lists-panel-content-wrap {
+  li {
+    padding: 10px !important;
+    margin: 10px !important;
+    border-radius: var(--border-radius) !important;
+  }
+}
+
+.audio-lists-panel-header {
+  box-shadow: none !important;
+}
+
+.react-jinke-music-player-main {
+  font-family: "Source Sans Pro", sans-serif !important;
+  .music-player-panel {
+    height: 50px !important;
+
+    .panel-content {
+      .rc-slider-track {
+        background-color: var(--invert-color) !important;
+      }
+
+      .rc-slider-handle {
+        background-color: var(--invert-color) !important;
+      }
+
+      .player-content {
+        .audio-lists-btn {
+          background-color: var(--background-color) !important;
+        }
+      }
+    }
+  }
+
+  .audio-lists-panel {
+    background-color: var(--dropdown-background-dark) !important;
+    backdrop-filter: var(--blured);
+    -webkit-backdrop-filter: var(--blured);
+  }
+
+  .play-mode-title {
+    right: 50px !important;
+    bottom: 92px !important;
+  }
+}
+
+.music-player-panel {
+  background-color: var(--transparent-color) !important;
+
+  height: auto !important;
+  margin-bottom: 20px !important;
+  z-index: auto !important;
+
+  .panel-content {
+    height: auto !important;
+    padding: 0px 20px !important;
+
+    .audio-lists-btn {
+      box-shadow: none !important;
+      background-color: var(--background-color) !important;
+    }
+
+    .rc-slider-handle {
+      border: none !important;
+    }
+  }
+}
+
+.audio-lists-panel-header {
+  background-color: var(--background-color) !important;
+}
+
+.audio-lists-panel-header-title {
+  span {
+    color: var(--layout-color) !important;
+  }
+}
+
+.audio-lists-panel-content.no-content > span {
+  color: var(--layout-color);
+}
+
+.audio-lists-panel {
+  border-radius: var(--border-radius) !important;
+  bottom: 114px !important;
+}

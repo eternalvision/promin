@@ -1,5 +1,6 @@
 .ReactModal__Overlay {
-  background-color: var(--modal-bg-color) !important;
+  background-color: var(--transparent-color) !important;
+
 }
 
 .ReactModal__Content {
@@ -14,9 +15,10 @@
   button {
     float: right;
     border: none;
-    padding: 0px 10px 5px;
+    width: 30px;
+    height: 30px;
     font-size: 35px;
-    border-radius: var(--border-radius) !important;
+    border-radius: 50% !important;
     // background: var(--search-bg-color);
     filter: var(--img-invert);
   }
